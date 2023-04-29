@@ -20,7 +20,7 @@ public class Main {
 
             int ti = scanner.nextInt();
 
-
+            G.addEdge(new DirectedEdge(yi, xi, ti));
             G.addEdge(new DirectedEdge(xi, yi, ti));
         }
         int weight = 0;

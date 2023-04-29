@@ -21,7 +21,7 @@ public class WeightedEdgeDigraph {
     public void addEdge(DirectedEdge e){
         int v = e.from();
         int w = e.to();
-        adj.get(v).add(e);
         adj.get(w).add(e);
+        adj.get(v).add(e);
     }
 }

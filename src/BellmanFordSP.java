@@ -10,7 +10,7 @@ public class BellmanFordSP {
             distTo[v] = Double.POSITIVE_INFINITY;
         }
         distTo[s] = 0;
-        for(int i = 0; i < G.V(); i++) {
+        for(int i = 0; i < G.V()-1; i++) {
             for (int v = 0; v < G.V(); v++) {
                 for(DirectedEdge e : G.adj(v)){
                     relax(e);
